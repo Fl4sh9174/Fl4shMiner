@@ -23,7 +23,7 @@ Experimental CUDA-optimized FusionHash miner for NVIDIA GPUs, with HiveOS suppor
 
 | GPU | Hashrate | Core Clock Offset | Lock Core Clock | Memory Clock | Power Limit |
 |---|---:|---:|---:|---:|---:|
-| GTX 1080 Ti | ~2.3 kH/s | +150 | 1800 MHz | Default 5001 MHz | 215 W |
+| GTX 1080 Ti | ~2.3 kH/s | +150 | 1800 MHz | Default 5000 MHz | 215 W |
 | RTX 3060 Ti | ~2.8 kH/s | +200 | 1800 MHz | Lock 5001 MHz | 160 W |
 | RTX 3070 | ~3.2 kH/s | +175 | 1800 MHz | Lock 5001 MHz | 175 W |
 | RTX 3080 | ~4.8 kH/s | +175 | 1750 MHz | Lock 5001 MHz | 270 W |
