@@ -1,31 +1,37 @@
 # Optimized Miner for FXL
 
-Experimental CUDA-optimized FusionHash miner for NVIDIA GPUs, with HiveOS support and full compatibility with existing pools and flight sheets.
+Experimental CUDA-optimized FusionHash miner for NVIDIA GPUs, with HiveOS support and full compatibility with existing pools and HiveOS flight sheets.
 
-Supported GPUs:
+## Supported GPUs
 
-GTX 10 Series
-RTX 20 Series
-RTX 30 Series
-RTX 40 Series
-RTX 50 Series
-Improvements:
+- GTX 10 Series
+- RTX 20 Series
+- RTX 30 Series
+- RTX 40 Series
+- RTX 50 Series
 
-Added native CUDA builds optimized for Pascal, Turing, Ampere, Ada Lovelace, and Blackwell GPUs.
-Added automatic per-GPU launch tuning for better out-of-the-box performance.
-Improved CUDA kernel performance.
-Added faster parallel initialization for multi-GPU rigs.
-Fixed HiveOS dashboard statistics.
-Preserved compatibility with existing pools and HiveOS flight sheets.
-Tested Performance:
+## Improvements
 
-GTX 1080 Ti: approximately 2.3 kH/s per GPU. Core Clock Offset 150, Lock Core Clock 1800, Default Memory Clock 5001, PL 215W
-RTX 3060 Ti: approximately 2.8 kH/s per GPU. Core Clock Offset 200, Lock Core Clock 1800, Lock Memory Clock 5001, PL 160W
-RTX 3070: approximately 3.2 kH/s per GPU. Core Clock Offset 175, Lock Core Clock 1800, Lock Memory Clock 5001, PL 175W
-RTX 3080: approximately 4.8 kH/s per GPU. Core Clock Offset 175, Lock Core Clock 1750, Lock Memory Clock 5001, PL 270W
-RTX 3080 Ti: approximately 5.6 kH/s per GPU. Core Clock Offset 175, Lock Core Clock 1750, Lock Memory Clock 5001, PL 290W
-RTX 4090: approximately 10.0 kH/s+ per GPU. Core Clock Offset 200, Lock Core Clock 2400, Lock Memory Clock 5001, PL 360W
+- Added native CUDA builds optimized for Pascal, Turing, Ampere, Ada Lovelace, and Blackwell GPUs.
+- Added automatic per-GPU launch tuning for better out-of-the-box performance.
+- Improved CUDA kernel performance.
+- Added faster parallel initialization for multi-GPU rigs.
+- Fixed HiveOS dashboard statistics.
+- Preserved compatibility with existing pools and HiveOS flight sheets.
+
+## Tested Performance
+
+| GPU | Hashrate | Core Clock Offset | Lock Core Clock | Memory Clock | Power Limit |
+|---|---:|---:|---:|---:|---:|
+| GTX 1080 Ti | ~2.3 kH/s | +150 | 1800 MHz | Default 5001 MHz | 215 W |
+| RTX 3060 Ti | ~2.8 kH/s | +200 | 1800 MHz | Lock 5001 MHz | 160 W |
+| RTX 3070 | ~3.2 kH/s | +175 | 1800 MHz | Lock 5001 MHz | 175 W |
+| RTX 3080 | ~4.8 kH/s | +175 | 1750 MHz | Lock 5001 MHz | 270 W |
+| RTX 3080 Ti | ~5.6 kH/s | +175 | 1750 MHz | Lock 5001 MHz | 290 W |
+| RTX 4090 | ~10.0+ kH/s | +200 | 2400 MHz | Lock 5001 MHz | 360 W |
+
 Pool shares were accepted with zero rejected shares during testing.
-Developer Fee:
 
-Includes a 2% developer fee.
+## Developer Fee
+
+- Includes a 2% developer fee.
