@@ -1,6 +1,10 @@
 # Optimized Miner for FXL
 
-Experimental CUDA-optimized FusionHash miner for NVIDIA GPUs, with HiveOS support and full compatibility with existing pools and HiveOS flight sheets.
+First stable release of Fl4shMiner, a CUDA-optimized FusionHash miner for
+NVIDIA GPUs with HiveOS support and compatibility with existing pools and
+flight sheets.
+
+Supported GP
 
 ## Supported GPUs
 
@@ -35,14 +39,15 @@ Pool shares were accepted with zero rejected shares during testing.
 ## Developer Fee
 
 - Includes a 2% developer fee.
-<img width="847" height="874" alt="image" src="https://github.com/user-attachments/assets/88ef714f-c211-4444-a094-50f8a553d810" />
+<img width="846" height="873" alt="image" src="https://github.com/user-attachments/assets/7f25da57-785e-435d-b38b-00c9fc8759f7" />
+
 
 ## HiveOS Flight Sheet / Custom Miner Setup
 
 | Field | Value |
 |---|---|
-| Miner name | `warpminer-cuda` |
-| Installation URL | `https://github.com/Fl4sh9174/Fl4shMiner/releases/download/v2.2.6/warpminer-cuda-v2.2.6.tar.gz` |
+| Miner name | `fl4shminer` |
+| Installation URL | `https://github.com/Fl4sh9174/Fl4shMiner/releases/download/v1.0.0/fl4shminer-v1.0.0.tar.gz` |
 | Hash algorithm | `---` |
 | Wallet and worker template | `%WAL%.%WORKER_NAME%` |
 | Pool URL | `wss://us-east.coin-miners.info:8443` |
