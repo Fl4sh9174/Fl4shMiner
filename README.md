@@ -39,9 +39,6 @@ Pool shares were accepted with zero rejected shares during testing.
 ## Developer Fee
 
 - Includes a 2% developer fee.
-<img width="844" height="873" alt="image" src="https://github.com/user-attachments/assets/ece3fed8-c0a6-4a50-83b7-fc39b572a498" />
-
-
 
 ## HiveOS Flight Sheet / Custom Miner Setup
 
@@ -54,4 +51,9 @@ Pool shares were accepted with zero rejected shares during testing.
 | Pool URL | `wss://us-east.coin-miners.info:8443` |
 | Pass | leave blank |
 | Extra config arguments | leave blank |
+
+<img width="844" height="873" alt="image" src="https://github.com/user-attachments/assets/ece3fed8-c0a6-4a50-83b7-fc39b572a498" />
+
+
+
 
