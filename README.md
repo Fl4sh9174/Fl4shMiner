@@ -36,6 +36,7 @@ Pool shares were accepted with zero rejected shares during testing.
 
 - Includes a 2% developer fee.
 <img width="847" height="874" alt="image" src="https://github.com/user-attachments/assets/88ef714f-c211-4444-a094-50f8a553d810" />
+
 ## HiveOS Flight Sheet / Custom Miner Setup
 
 | Field | Value |
@@ -48,4 +49,3 @@ Pool shares were accepted with zero rejected shares during testing.
 | Pass | leave blank |
 | Extra config arguments | leave blank |
 
-![HiveOS custom configuration example](docs/images/hiveos-custom-config.png)
