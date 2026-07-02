@@ -39,7 +39,8 @@ Pool shares were accepted with zero rejected shares during testing.
 ## Developer Fee
 
 - Includes a 2% developer fee.
-<img width="846" height="873" alt="image" src="https://github.com/user-attachments/assets/7f25da57-785e-435d-b38b-00c9fc8759f7" />
+<img width="844" height="873" alt="image" src="https://github.com/user-attachments/assets/ece3fed8-c0a6-4a50-83b7-fc39b572a498" />
+
 
 
 ## HiveOS Flight Sheet / Custom Miner Setup
