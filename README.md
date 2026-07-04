@@ -1,18 +1,31 @@
-# Optimized Miner for FXL
+# Fl4shminer
 
-First stable release of Fl4shMiner, a CUDA-optimized FusionHash miner for
-NVIDIA GPUs with HiveOS support and compatibility with existing pools and
+Fl4shMiner is a GPU miner for NVIDIA CUDA and AMD OpenCL devices with Windows/HiveOS support and compatibility with existing pools and
 flight sheets.
 
-Supported GP
+## Supported Algos
+- FusionHash (FXL)
 
 ## Supported GPUs
 
+NVIDIA GPUs
 - GTX 10 Series
+- GTX 16 Series
 - RTX 20 Series
 - RTX 30 Series
 - RTX 40 Series
 - RTX 50 Series
+- NVIDIA CMP Mining GPUs
+- NVIDIA Workstation GPUs
+
+AMD GPUs
+- RX 400 Series
+- RX 500 Series
+- RX Vega Series
+- RX 5000 Series
+- RX 6000 Series
+- RX 7000 Series
+- AMD Workstation GPUs
 
 ## Improvements
 
