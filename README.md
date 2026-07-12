@@ -101,7 +101,7 @@ Cryptix-OX8, also known as Cryptix, is supported on both NVIDIA and AMD GPUs.
 | RTX 3070          | ~123.5 MH/s |          +200 MHz |          1750 MHz | Locked at 5001 MHz |       155 W |
 | RTX 3080          | ~177.5 MH/s |          +200 MHz |          1725 MHz | Locked at 5001 MHz |       250 W |
 | RTX 3080 Ti       | ~210.2 MH/s |          +175 MHz |          1710 MHz | Locked at 5001 MHz |       260 W |
-| RTX 4090          | ~453.3 MH/s |          +200 MHz |          2700 MHz | Locked at 5001 MHz |       360 W |
+| RTX 4090          | ~616.6 MH/s |          +200 MHz |          2700 MHz | Locked at 5001 MHz |       399 W |
 
 Pool shares were accepted with zero rejected shares during testing.
 
