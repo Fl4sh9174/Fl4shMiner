@@ -96,12 +96,12 @@ Cryptix-OX8, also known as Cryptix, is supported on both NVIDIA and AMD GPUs.
 | GPU               |    Hashrate | Core Clock Offset | Locked Core Clock |       Memory Clock | Power Limit |
 | ----------------- | ----------: | ----------------: | ----------------: | -----------------: | ----------: |
 | Radeon RX 5700 XT |  ~48.2 MH/s |               N/A |          1850 MHz |              1 MHz |       135 W |
-| GTX 1080 Ti       |  ~54.0 MH/s |          +150 MHz |          1825 MHz |          -2000 MHz |       200 W |
-| RTX 3060 Ti       | ~106.0 MH/s |          +200 MHz |          1825 MHz | Locked at 5001 MHz |       140 W |
-| RTX 3070          | ~123.5 MH/s |          +200 MHz |          1750 MHz | Locked at 5001 MHz |       155 W |
-| RTX 3080          | ~177.5 MH/s |          +200 MHz |          1725 MHz | Locked at 5001 MHz |       250 W |
-| RTX 3080 Ti       | ~210.2 MH/s |          +175 MHz |          1710 MHz | Locked at 5001 MHz |       260 W |
-| RTX 4090          | ~616.6 MH/s |          +200 MHz |          2700 MHz | Locked at 5001 MHz |       399 W |
+| GTX 1080 Ti       |  ~60.0 MH/s |          +150 MHz |          1825 MHz |          -2000 MHz |       205 W |
+| RTX 3060 Ti       | ~126.0 MH/s |          +200 MHz |          1825 MHz | Locked at 5001 MHz |       140 W |
+| RTX 3070          | ~151.5 MH/s |          +200 MHz |          1750 MHz | Locked at 5001 MHz |       155 W |
+| RTX 3080          | ~225.5 MH/s |          +200 MHz |          1725 MHz | Locked at 5001 MHz |       270 W |
+| RTX 3080 Ti       | ~264.2 MH/s |          +175 MHz |          1710 MHz | Locked at 5001 MHz |       290 W |
+| RTX 4090          | ~649.0 MH/s |          +200 MHz |          2700 MHz | Locked at 5001 MHz |       400 W |
 
 Pool shares were accepted with zero rejected shares during testing.
 
