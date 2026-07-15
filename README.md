@@ -96,7 +96,7 @@ Cryptix-OX8, also known as Cryptix, is supported on both NVIDIA and AMD GPUs.
 | GPU               |    Hashrate | Core Clock Offset | Locked Core Clock |       Memory Clock | Power Limit |
 | ----------------- | ----------: | ----------------: | ----------------: | -----------------: | ----------: |
 | Radeon RX 5700 XT |  ~48.2 MH/s |               N/A |          1850 MHz |              1 MHz |       135 W |
-| GTX 1080 Ti       |  ~60.0 MH/s |          +150 MHz |          1825 MHz |          -2000 MHz |       175 W |
+| GTX 1080 Ti       |  ~69.0 MH/s |          +150 MHz |          1825 MHz |          -2000 MHz |       175 W |
 | RTX 3060 Ti       | ~126.0 MH/s |          +200 MHz |          1825 MHz | Locked at 5001 MHz |       140 W |
 | RTX 3070          | ~151.5 MH/s |          +200 MHz |          1750 MHz | Locked at 5001 MHz |       155 W |
 | RTX 3080          | ~225.5 MH/s |          +200 MHz |          1725 MHz | Locked at 5001 MHz |       270 W |
