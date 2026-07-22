@@ -1,0 +1,26 @@
+{
+  "name": "FL4SHMINER_CSD",
+  "isFavorite": false,
+  "items": [
+    {
+      "coin": "CSD",
+      "pool_ssl": false,
+      "pool_urls": [
+        "csd-us-east.lproute.com:8760"
+      ],
+      "dpool_ssl": false,
+      "miner": "custom",
+      "miner_alt": "fl4shminer",
+      "miner_config": {
+        "url": "csd-us-east.lproute.com:8760",
+        "algo": "csd",
+        "pass": "x",
+        "miner": "fl4shminer",
+        "template": "%WAL%.%WORKER_NAME%",
+        "install_url": "https://github.com/Fl4sh9174/Fl4shMiner/releases/download/v1.1.8/fl4shminer-v1.1.8.tar.gz",
+        "user_config": ""
+      },
+      "pool_geo": []
+    }
+  ]
+}
