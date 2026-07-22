@@ -1,0 +1,26 @@
+{
+  "name": "FL4SHMINER_FXL",
+  "isFavorite": false,
+  "items": [
+    {
+      "coin": "FXL",
+      "pool_ssl": true,
+      "pool_urls": [
+        "wss://us-east.coin-miners.info:8443"
+      ],
+      "dpool_ssl": false,
+      "miner": "custom",
+      "miner_alt": "fl4shminer",
+      "miner_config": {
+        "url": "wss://us-east.coin-miners.info:8443",
+        "algo": "fusionhash",
+        "pass": "x",
+        "miner": "fl4shminer",
+        "template": "%WAL%.%WORKER_NAME%",
+        "install_url": "https://github.com/Fl4sh9174/Fl4shMiner/releases/download/v1.1.8/fl4shminer-v1.1.8.tar.gz",
+        "user_config": ""
+      },
+      "pool_geo": []
+    }
+  ]
+}
