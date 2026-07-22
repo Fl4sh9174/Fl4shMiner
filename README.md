@@ -6,6 +6,7 @@ Fl4shMiner is a GPU miner for NVIDIA CUDA and AMD OpenCL devices. It supports Wi
 
 * [FusionHash (FXL)](#fusionhash-fxl)
 * [Cryptix-OX8 (CPAY)](#cryptix-ox8-cpay)
+* [SHA256d (CSD)](#sha256d-csd)
 
 ## Supported GPUs
 
@@ -48,7 +49,7 @@ Fl4shMiner is a GPU miner for NVIDIA CUDA and AMD OpenCL devices. It supports Wi
 
 | GPU         |    Hashrate | Core Clock Offset | Locked Core Clock |       Memory Clock | Power Limit |
 | ----------- | ----------: | ----------------: | ----------------: | -----------------: | ----------: |
-| GTX 1080 Ti |   ~2.3 kH/s |          +150 MHz |          1860 MHz |   Default 5000 MHz |       215 W |
+| GTX 1080 Ti |   ~2.3 kH/s |          +150 MHz |          1800 MHz |   Default 5000 MHz |       215 W |
 | RTX 3060 Ti |   ~2.8 kH/s |          +200 MHz |          1800 MHz | Locked at 5001 MHz |       160 W |
 | RTX 3070    |   ~3.2 kH/s |          +175 MHz |          1800 MHz | Locked at 5001 MHz |       175 W |
 | RTX 3080    |   ~4.8 kH/s |          +175 MHz |          1750 MHz | Locked at 5001 MHz |       270 W |
@@ -95,13 +96,13 @@ Cryptix-OX8, also known as Cryptix, is supported on both NVIDIA and AMD GPUs.
 
 | GPU               |    Hashrate | Core Clock Offset | Locked Core Clock |       Memory Clock | Power Limit |
 | ----------------- | ----------: | ----------------: | ----------------: | -----------------: | ----------: |
-| Radeon RX 5700 XT |  ~48.2 MH/s |               N/A |          1850 MHz |              1 MHz |       135 W |
-| GTX 1080 Ti       |  ~69.0 MH/s |          +150 MHz |          1825 MHz |          -2000 MHz |       175 W |
-| RTX 3060 Ti       | ~126.0 MH/s |          +200 MHz |          1825 MHz | Locked at 5001 MHz |       140 W |
-| RTX 3070          | ~151.5 MH/s |          +200 MHz |          1750 MHz | Locked at 5001 MHz |       155 W |
-| RTX 3080          | ~225.5 MH/s |          +200 MHz |          1725 MHz | Locked at 5001 MHz |       270 W |
-| RTX 3080 Ti       | ~264.2 MH/s |          +175 MHz |          1710 MHz | Locked at 5001 MHz |       290 W |
-| RTX 4090          | ~649.0 MH/s |          +200 MHz |          2700 MHz | Locked at 5001 MHz |       400 W |
+| Radeon RX 5700 XT |  ~50.0 MH/s |               N/A |          1850 MHz |              1 MHz |       140 W |
+| GTX 1080 Ti       |  ~58.0 MH/s |          +150 MHz |          1825 MHz |          -2000 MHz |       200 W |
+| RTX 3060 Ti       | ~108.0 MH/s |          +200 MHz |          1825 MHz | Locked at 5001 MHz |       140 W |
+| RTX 3070          | ~125.0 MH/s |          +200 MHz |          1750 MHz | Locked at 5001 MHz |       155 W |
+| RTX 3080          | ~179.5 MH/s |          +200 MHz |          1725 MHz | Locked at 5001 MHz |       250 W |
+| RTX 3080 Ti       | ~211.0 MH/s |          +175 MHz |          1710 MHz | Locked at 5001 MHz |       260 W |
+| RTX 4090          | ~460.0 MH/s |          +200 MHz |          2700 MHz | Locked at 5001 MHz |       360 W |
 
 Pool shares were accepted with zero rejected shares during testing.
 
@@ -124,5 +125,40 @@ Cryptix-OX8 mining includes a **1% developer fee**.
 | Extra config arguments     | Leave blank                                                                                 |
 
 <img width="845" height="871" alt="Fl4shMiner Cryptix-OX8 HiveOS configuration" src="https://github.com/user-attachments/assets/2bb01c26-22a2-4e4c-8c16-f7fbb5203f88" />
+
+[Back to Supported Algorithms](#supported-algorithms)
+
+---
+
+## SHA256d (CSD)
+
+Fl4shMiner supports SHA256d mining for CSD on NVIDIA GPUs.
+
+### Command-Line Example
+
+```bash
+-a csd -pool stratum+tcp://csd-us-east.lproute.com:8760 -w 0xYOUR_WALLET_ADDRESS.WORKER_NAME -pass x
+```
+
+Replace `0xYOUR_WALLET_ADDRESS` with your CSD wallet address and `WORKER_NAME` with the desired name for your mining rig.
+
+### Tested Performance
+
+| GPU         |    Hashrate | Core Clock Offset | Locked Core Clock |       Memory Clock | Power Limit |
+| ----------- | ----------: | ----------------: | ----------------: | -----------------: | ----------: |
+| GTX 1080 Ti |  ~1.97 GH/s |          +150 MHz |          1825 MHz |       Default  MHz |       215 W |
+| RTX 3060 Ti | ~xx.xx GH/s |          +200 MHz |          1825 MHz | Locked at 5001 MHz |       140 W |
+| RTX 3070    | ~xx.xx GH/s |          +200 MHz |          1755 MHz | Locked at 5001 MHz |       155 W |
+| RTX 3080    | ~xx.xx GH/s |          +200 MHz |          1755 MHz | Locked at 5001 MHz |       250 W |
+| RTX 3080 Ti | ~3.96  GH/s |          +200 MHz |          1755 MHz | Locked at 5001 MHz |       300 W |
+| RTX 4090    | ~9.62  GH/s |          +200 MHz |          2800 MHz | Locked at 5001 MHz |       389 W |
+
+Pool shares were accepted with zero rejected shares during testing.
+
+> Performance may vary depending on GPU model, silicon quality, driver version, operating system, cooling, and overclock settings.
+
+### Developer Fee
+
+SHA256d mining for CSD includes a **1% developer fee**.
 
 [Back to Supported Algorithms](#supported-algorithms)
