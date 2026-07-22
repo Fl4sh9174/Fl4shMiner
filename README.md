@@ -1,3 +1,8 @@
+<p align="center">
+  <a href="https://discord.gg/8wPbSHUYXs">
+    <img src="https://img.shields.io/badge/Discord-Join%20the%20Community-5865F2?logo=discord&logoColor=white" alt="Join the Fl4shMiner Discord">
+  </a>
+</p>
 <img width="1254" height="1254" alt="01_fl4shminer_original_red_gold_dark_background" src="https://github.com/user-attachments/assets/fc85a95e-2138-4d34-9b48-444066f411a1" />
 
 Fl4shMiner is a GPU miner for NVIDIA CUDA and AMD OpenCL devices. It supports Windows and HiveOS and is designed for compatibility with existing mining pools and HiveOS flight sheets.
