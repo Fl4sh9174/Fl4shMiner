@@ -21,7 +21,7 @@ Fl4shMiner is a GPU miner for NVIDIA CUDA and AMD OpenCL devices. It supports Wi
 - NVIDIA CMP Mining GPUs
 - NVIDIA Workstation GPUs
 
-### AMD
+### AMD (FXL and CPAY)
 
 - RX 400 Series
 - RX 500 Series
@@ -44,6 +44,12 @@ Fl4shMiner is a GPU miner for NVIDIA CUDA and AMD OpenCL devices. It supports Wi
 ---
 
 ## FusionHash (FXL)
+
+### Command-Line Example
+
+```bash
+-a fusionhash -pool wss://us-east.coin-miners.info:8443 -w %WAL%.%WORKER_NAME% -pass x
+```
 
 ### Tested Performance
 
