@@ -146,12 +146,12 @@ Replace `0xYOUR_WALLET_ADDRESS` with your CSD wallet address and `WORKER_NAME` w
 
 | GPU         |    Hashrate | Core Clock Offset | Locked Core Clock |       Memory Clock | Power Limit |
 | ----------- | ----------: | ----------------: | ----------------: | -----------------: | ----------: |
-| GTX 1080 Ti |  ~1.97 GH/s |          +150 MHz |          1825 MHz |       Default  MHz |       215 W |
-| RTX 3060 Ti | ~xx.xx GH/s |          +200 MHz |          1825 MHz | Locked at 5001 MHz |       140 W |
-| RTX 3070    | ~xx.xx GH/s |          +200 MHz |          1755 MHz | Locked at 5001 MHz |       155 W |
-| RTX 3080    | ~xx.xx GH/s |          +200 MHz |          1755 MHz | Locked at 5001 MHz |       250 W |
-| RTX 3080 Ti | ~3.96  GH/s |          +200 MHz |          1755 MHz | Locked at 5001 MHz |       300 W |
-| RTX 4090    | ~9.62  GH/s |          +200 MHz |          2800 MHz | Locked at 5001 MHz |       389 W |
+| GTX 1080 Ti |  ~1.90 GH/s |          +150 MHz |          1825 MHz | Locked at 810 MHz |       215 W |
+| RTX 3060 Ti |  ~1.90 GH/s |          +200 MHz |          1825 MHz | Locked at 810 MHz |       140 W |
+| RTX 3070    |  ~2.17 GH/s |          +200 MHz |          1755 MHz | Locked at 810 MHz |       155 W |
+| RTX 3080    |  ~3.43 GH/s |          +200 MHz |          1755 MHz | Locked at 810 MHz |       250 W |
+| RTX 3080 Ti |  ~4.07 GH/s |          +200 MHz |          1755 MHz | Locked at 810 MHz |       300 W |
+| RTX 4090    |  ~9.60 GH/s |          +200 MHz |          2800 MHz | Locked at 5001 MHz |       389 W |
 
 Pool shares were accepted with zero rejected shares during testing.
 
