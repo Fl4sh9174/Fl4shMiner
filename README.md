@@ -9,9 +9,10 @@ Fl4shMiner is a GPU miner for NVIDIA CUDA and AMD OpenCL devices. It supports Wi
 
 ## Supported Algorithms
 
-- [FusionHash (FXL)](#fusionhash-fxl)
+- [PearlHash (PRL)](#pearlhash-prl)
 - [Cryptix-OX8 (CPAY)](#cryptix-ox8-cpay)
 - [SHA256d (CSD)](#sha256d-csd)
+- [FusionHash (FXL)](#fusionhash-fxl)
 
 ## Supported GPUs
 
@@ -26,6 +27,8 @@ Fl4shMiner is a GPU miner for NVIDIA CUDA and AMD OpenCL devices. It supports Wi
 - NVIDIA CMP Mining GPUs
 - NVIDIA Workstation GPUs
 
+> **PearlHash support:** RTX 30 Series (Ampere) and RTX 40 Series (Ada Lovelace). Additional NVIDIA architectures are planned for future releases.
+
 ### AMD (FXL and CPAY)
 
 - RX 400 Series
@@ -39,6 +42,7 @@ Fl4shMiner is a GPU miner for NVIDIA CUDA and AMD OpenCL devices. It supports Wi
 ## Features and Improvements
 
 - Native CUDA builds optimized for Pascal, Turing, Ampere, Ada Lovelace, and Blackwell GPUs.
+- PearlHash CUDA kernels optimized for Ampere and Ada Lovelace GPUs.
 - Automatic per-GPU launch tuning for improved out-of-the-box performance.
 - Optimized CUDA kernels.
 - Faster parallel initialization for multi-GPU rigs.
@@ -48,24 +52,31 @@ Fl4shMiner is a GPU miner for NVIDIA CUDA and AMD OpenCL devices. It supports Wi
 
 ---
 
-## FusionHash (FXL)
+---
+
+## PearlHash (PRL)
+
+Fl4shMiner supports PearlHash mining for Pearl (PRL) on NVIDIA RTX 30 Series and RTX 40 Series GPUs.
 
 ### Command-Line Example
 
 ```bash
--a fusionhash -pool wss://us-east.coin-miners.info:8443 -w %WAL%.%WORKER_NAME% -pass x
+-a pearlhash -pool stratum+tcp://br.pearl.herominers.com:1200 -w %WAL%.%WORKER_NAME% -pass x
 ```
+
+Replace `%WAL%` with your PRL wallet address and `%WORKER_NAME%` with the desired name for your mining rig.
 
 ### Tested Performance
 
+Hashrates below use the **2-op/MAC reporting convention** used by Fl4shMiner v1.2.1.
+
 | GPU | Hashrate | Core Clock Offset | Locked Core Clock | Memory Clock | Power Limit |
 |---|---:|---:|---:|---:|---:|
-| GTX 1080 Ti | ~2.3 kH/s | +150 MHz | 1800 MHz | Default 5000 MHz | 215 W |
-| RTX 3060 Ti | ~2.8 kH/s | +200 MHz | 1800 MHz | Locked at 5001 MHz | 160 W |
-| RTX 3070 | ~3.2 kH/s | +175 MHz | 1800 MHz | Locked at 5001 MHz | 175 W |
-| RTX 3080 | ~4.8 kH/s | +175 MHz | 1750 MHz | Locked at 5001 MHz | 270 W |
-| RTX 3080 Ti | ~5.6 kH/s | +175 MHz | 1750 MHz | Locked at 5001 MHz | 290 W |
-| RTX 4090 | ~10.0+ kH/s | +200 MHz | 2400 MHz | Locked at 5001 MHz | 360 W |
+| RTX 3060 Ti | ~67.40 TH/s | +225 MHz | 1825 MHz | Locked at 5001 MHz | 168 W |
+| RTX 3070 | ~74.50 TH/s | +250 MHz | 1650 MHz | Locked at 5001 MHz | 175 W |
+| RTX 3080 | ~108.00 TH/s | +250 MHz | 1605 MHz | Locked at 5001 MHz | 269 W |
+| RTX 3080 Ti | ~128.00 TH/s | +250 MHz | 1605 MHz | Locked at 5001 MHz | 299 W |
+| RTX 4090 | ~300.00 TH/s | +250 MHz | 2500 MHz | Locked at 5001 MHz | 397 W |
 
 Pool shares were accepted with zero rejected shares during testing.
 
@@ -73,13 +84,13 @@ Pool shares were accepted with zero rejected shares during testing.
 
 ### Developer Fee
 
-FusionHash mining includes a **2% developer fee**.
+PearlHash mining for PRL includes a **1.5% developer fee**.
 
 ### HiveOS Configuration
 
-[View or download the FusionHash HiveOS configuration](configs/hiveos/fl4shminer-fxl.json)
+[View or download the PearlHash (PRL) HiveOS configuration](configs/hiveos/fl4shminer-prl.json)
 
-Import `fl4shminer-fxl.json` into HiveOS to create the preconfigured flight sheet.
+Import `fl4shminer-prl.json` into HiveOS to create the preconfigured flight sheet.
 
 [Back to Supported Algorithms](#supported-algorithms)
 
@@ -161,5 +172,42 @@ SHA256d mining for CSD includes a **1% developer fee**.
 [View or download the SHA256d (CSD) HiveOS configuration](configs/hiveos/fl4shminer-csd.json)
 
 Import `fl4shminer-csd.json` into HiveOS to create the preconfigured flight sheet.
+
+[Back to Supported Algorithms](#supported-algorithms)
+
+---
+
+## FusionHash (FXL)
+
+### Command-Line Example
+
+```bash
+-a fusionhash -pool wss://us-east.coin-miners.info:8443 -w %WAL%.%WORKER_NAME% -pass x
+```
+
+### Tested Performance
+
+| GPU | Hashrate | Core Clock Offset | Locked Core Clock | Memory Clock | Power Limit |
+|---|---:|---:|---:|---:|---:|
+| GTX 1080 Ti | ~2.3 kH/s | +150 MHz | 1800 MHz | Default 5000 MHz | 215 W |
+| RTX 3060 Ti | ~2.8 kH/s | +200 MHz | 1800 MHz | Locked at 5001 MHz | 160 W |
+| RTX 3070 | ~3.2 kH/s | +175 MHz | 1800 MHz | Locked at 5001 MHz | 175 W |
+| RTX 3080 | ~4.8 kH/s | +175 MHz | 1750 MHz | Locked at 5001 MHz | 270 W |
+| RTX 3080 Ti | ~5.6 kH/s | +175 MHz | 1750 MHz | Locked at 5001 MHz | 290 W |
+| RTX 4090 | ~10.0+ kH/s | +200 MHz | 2400 MHz | Locked at 5001 MHz | 360 W |
+
+Pool shares were accepted with zero rejected shares during testing.
+
+> Performance may vary depending on GPU model, silicon quality, driver version, operating system, cooling, and overclock settings.
+
+### Developer Fee
+
+FusionHash mining includes a **2% developer fee**.
+
+### HiveOS Configuration
+
+[View or download the FusionHash HiveOS configuration](configs/hiveos/fl4shminer-fxl.json)
+
+Import `fl4shminer-fxl.json` into HiveOS to create the preconfigured flight sheet.
 
 [Back to Supported Algorithms](#supported-algorithms)
