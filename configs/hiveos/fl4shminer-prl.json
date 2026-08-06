@@ -6,18 +6,18 @@
       "coin": "PRL",
       "pool_ssl": false,
       "pool_urls": [
-        "br.pearl.herominers.com:1200"
+        "prl-us.kryptex.network:7048"
       ],
       "dpool_ssl": false,
       "miner": "custom",
       "miner_alt": "fl4shminer",
       "miner_config": {
-        "url": "us.pearl.herominers.com:1200",
+        "url": "prl-us.kryptex.network:7048",
         "algo": "pearlhash",
         "pass": "x",
         "miner": "fl4shminer",
         "template": "%WAL%.%WORKER_NAME%",
-        "install_url": "https://github.com/Fl4sh9174/Fl4shMiner/releases/download/v1.2.3/fl4shminer-v1.2.3.tar.gz",
+        "install_url": "https://github.com/Fl4sh9174/Fl4shMiner/releases/download/v1.2.4/fl4shminer-v1.2.4.tar.gz",
         "user_config": ""
       },
       "pool_geo": []
