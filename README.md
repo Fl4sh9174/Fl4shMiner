@@ -56,7 +56,7 @@ Fl4shMiner is a GPU miner for NVIDIA CUDA and AMD OpenCL devices. It supports Wi
 
 ## PearlHash (PRL)
 
-Fl4shMiner supports PearlHash mining for Pearl (PRL) on NVIDIA RTX 30 Series, RTX 40 Series GPUs and RTX 50 Series GPUs.
+Fl4shMiner supports PearlHash mining for Pearl (PRL) on NVIDIA RTX 20 Series, RTX 30 Series, RTX 40 Series GPUs and RTX 50 Series GPUs.
 
 ### Command-Line Example
 
@@ -76,7 +76,7 @@ Hashrates below used Fl4shMiner v1.2.1.
 | RTX 3070 | ~74.50 TH/s | +250 MHz | 1650 MHz | Locked at 5001 MHz | 175 W |
 | RTX 3080 | ~108.00 TH/s | +250 MHz | 1605 MHz | Locked at 5001 MHz | 269 W |
 | RTX 3080 Ti | ~128.00 TH/s | +250 MHz | 1605 MHz | Locked at 5001 MHz | 299 W |
-| RTX 4090 | ~300.00 TH/s | +250 MHz | 2500 MHz | Locked at 5001 MHz | 397 W |
+| RTX 4090 | ~307.00 TH/s | +300 MHz | 2505 MHz | Locked at 5001 MHz | 397 W |
 
 Pool shares were accepted with zero rejected shares during testing.
 
