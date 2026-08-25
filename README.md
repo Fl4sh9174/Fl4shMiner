@@ -72,11 +72,11 @@ Hashrates below used Fl4shMiner v1.2.1.
 
 | GPU | Hashrate | Core Clock Offset | Locked Core Clock | Memory Clock | Power Limit |
 |---|---:|---:|---:|---:|---:|
-| RTX 3060 Ti | ~67.40 TH/s | +225 MHz | 1825 MHz | Locked at 5001 MHz | 168 W |
-| RTX 3070 | ~74.50 TH/s | +250 MHz | 1650 MHz | Locked at 5001 MHz | 175 W |
-| RTX 3080 | ~108.00 TH/s | +250 MHz | 1605 MHz | Locked at 5001 MHz | 269 W |
-| RTX 3080 Ti | ~128.00 TH/s | +250 MHz | 1605 MHz | Locked at 5001 MHz | 299 W |
-| RTX 4090 | ~307.00 TH/s | +300 MHz | 2505 MHz | Locked at 5001 MHz | 397 W |
+| RTX 3060 Ti | ~68.00 TH/s | +225 MHz | 1825 MHz | Locked at 5001 MHz | 168 W |
+| RTX 3070 | ~75.00 TH/s | +250 MHz | 1650 MHz | Locked at 5001 MHz | 175 W |
+| RTX 3080 | ~108.54 TH/s | +250 MHz | 1605 MHz | Locked at 5001 MHz | 262 W |
+| RTX 3080 Ti | ~128.00 TH/s | +250 MHz | 1605 MHz | Locked at 5001 MHz | 295 W |
+| RTX 4090 | ~316.00 TH/s | +300 MHz | 2505 MHz | Locked at 5001 MHz | 398 W |
 
 Pool shares were accepted with zero rejected shares during testing.
 
