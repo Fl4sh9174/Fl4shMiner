@@ -1,22 +1,22 @@
 {
-  "name": "FL4SHMINER_PRL",
+  "name": "FL4SHMINER_NOID",
   "isFavorite": false,
   "items": [
     {
-      "coin": "PRL",
-      "pool_ssl": false,
+      "coin": "NOID",
+      "pool_ssl": true,
       "pool_urls": [
-        "prl-us.kryptex.network:7048"
+        "https://pool.ariabrain.com/noid-rpc/"
       ],
       "dpool_ssl": false,
       "miner": "custom",
       "miner_alt": "fl4shminer",
       "miner_config": {
-        "url": "prl-us.kryptex.network:7048",
-        "algo": "pearlhash",
+        "url": "https://pool.ariabrain.com/noid-rpc/",
+        "algo": "noid",
         "pass": "x",
         "miner": "fl4shminer",
-        "template": "%WAL%.%WORKER_NAME%",
+        "template": "%WAL%",
         "install_url": "https://github.com/Fl4sh9174/Fl4shMiner/releases/download/v1.3.3/fl4shminer-v1.3.3.tar.gz",
         "user_config": ""
       },
