@@ -13,6 +13,7 @@ Fl4shMiner is a GPU miner for NVIDIA CUDA and AMD OpenCL devices. It supports Wi
 - [Cryptix-OX8 (CPAY)](#cryptix-ox8-cpay)
 - [SHA256d (CSD)](#sha256d-csd)
 - [FusionHash (FXL)](#fusionhash-fxl)
+- [Parano1d / Poseidon2b (NOID)](#parano1d--poseidon2b-noid)
 
 ## Supported GPUs
 
@@ -28,6 +29,8 @@ Fl4shMiner is a GPU miner for NVIDIA CUDA and AMD OpenCL devices. It supports Wi
 - NVIDIA Workstation GPUs
 
 > **PearlHash support:** RTX 30 Series (Ampere) and RTX 40 Series (Ada Lovelace). Additional NVIDIA architectures are planned for future releases.
+>
+> **Parano1d / NOID support:** RTX 30 Series (SM86), RTX 40 Series (SM89), and RTX 50 Series (SM120).
 
 ### AMD (FXL and CPAY)
 
@@ -43,6 +46,7 @@ Fl4shMiner is a GPU miner for NVIDIA CUDA and AMD OpenCL devices. It supports Wi
 
 - Native CUDA builds optimized for Pascal, Turing, Ampere, Ada Lovelace, and Blackwell GPUs.
 - PearlHash CUDA kernels optimized for Ampere and Ada Lovelace GPUs.
+- Poseidon2b (NOID) CUDA kernels optimized for SM86, SM89, and SM120 GPUs.
 - Automatic per-GPU launch tuning for improved out-of-the-box performance.
 - Optimized CUDA kernels.
 - Faster parallel initialization for multi-GPU rigs.
@@ -209,5 +213,47 @@ FusionHash mining includes a **2% developer fee**.
 [View or download the FusionHash HiveOS configuration](configs/hiveos/fl4shminer-fxl.json)
 
 Import `fl4shminer-fxl.json` into HiveOS to create the preconfigured flight sheet.
+
+[Back to Supported Algorithms](#supported-algorithms)
+
+---
+
+## Parano1d / Poseidon2b (NOID)
+
+Fl4shMiner supports Poseidon2b mining for NOID on NVIDIA RTX 30 Series, RTX 40 Series, and RTX 50 Series GPUs. Native CUDA kernels are provided for SM86, SM89, and SM120, with automatic architecture dispatch and workload tuning.
+
+Supported algorithm aliases are `noid`, `no1d`, `parano1d`, and `poseidon2b`. The implementation includes full 128-bit nonce handling with CPU/GPU result verification.
+
+### Command-Line Example
+
+```bash
+-a noid -pool https://pool.ariabrain.com/noid-rpc/ -w "%WALLET%.%WORKER%" -pass x
+```
+
+Use your NOID wallet address as the login and payout address. Optional worker names use the `wallet.worker` format.
+
+### Tested Performance
+
+| GPU | Hashrate | Core Clock | Memory Clock | Power | Efficiency |
+|---|---:|---:|---:|---:|---:|
+| RTX 3080 Ti | ~26.97 MH/s | 1605 MHz | 5001 MHz | 148.71 W | 0.181 MH/s/W |
+| RTX 4090 | ~73.02 MH/s | 2730 MHz | 10251 MHz | 256.13 W | 0.285 MH/s/W |
+| RTX 5080 | ~50.29 MH/s | 2865 MHz | 14801 MHz | 178.31 W | 0.282 MH/s/W |
+
+> NOID figures above are fixed-work engineering measurements. Live pool results may be lower during normal node proof-preparation gaps.
+>
+> Performance may vary depending on GPU model, silicon quality, driver version, operating system, cooling, and overclock settings.
+
+### Developer Fee
+
+Poseidon2b mining for NOID includes a **3% developer fee**, calculated from completed work.
+
+### AriaPool Integration
+
+Fl4shMiner supports [AriaPool NOID](https://pool.ariabrain.com/noid.html) directly.
+
+- Endpoint: `https://pool.ariabrain.com/noid-rpc/`
+- Your NOID wallet address is your login and payout address.
+- Optional worker names use `wallet.worker`.
 
 [Back to Supported Algorithms](#supported-algorithms)
