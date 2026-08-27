@@ -17,7 +17,7 @@
         "pass": "x",
         "miner": "fl4shminer",
         "template": "%WAL%",
-        "install_url": "https://github.com/Fl4sh9174/Fl4shMiner/releases/download/v1.3.3/fl4shminer-v1.3.3.tar.gz",
+        "install_url": "https://github.com/Fl4sh9174/Fl4shMiner/releases/download/v1.3.4/fl4shminer-v1.3.4.tar.gz",
         "user_config": ""
       },
       "pool_geo": []
