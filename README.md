@@ -236,9 +236,10 @@ Use your NOID wallet address as the login and payout address. Optional worker na
 
 | GPU | Hashrate | Core Clock | Memory Clock | Power | Efficiency |
 |---|---:|---:|---:|---:|---:|
+| RTX 3060 Laptop | ~10.20 MH/s | 1605 MHz | 5001 MHz | 148.71 W | 0.248 MH/s/W |
 | RTX 3080 Ti | ~26.97 MH/s | 1605 MHz | 5001 MHz | 148.71 W | 0.181 MH/s/W |
-| RTX 4090 | ~73.02 MH/s | 2730 MHz | 10251 MHz | 256.13 W | 0.285 MH/s/W |
-| RTX 5080 | ~50.29 MH/s | 2865 MHz | 14801 MHz | 178.31 W | 0.282 MH/s/W |
+| RTX 4090 | ~93.02 MH/s | 2760 MHz | 5001 MHz | 237.55 W | 0.387 MH/s/W |
+| RTX 5080 | ~123.63 MH/s | 3000 MHz | 7001 MHz | 380.00 W | 0.325 MH/s/W |
 
 > NOID figures above are fixed-work engineering measurements. Live pool results may be lower during normal node proof-preparation gaps.
 >
