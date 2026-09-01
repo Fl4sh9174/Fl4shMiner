@@ -236,7 +236,7 @@ Use your NOID wallet address as the login and payout address. Optional worker na
 
 | GPU | Hashrate | Core Clock | Memory Clock | Power | Efficiency |
 |---|---:|---:|---:|---:|---:|
-| RTX 3060 Laptop | ~10.20 MH/s | 1860 MHz | 810 MHz | 148.71 W | 0.248 MH/s/W |
+| RTX 3060 Laptop | ~22.65 MH/s | 1650 MHz | 810 MHz | 75 W | 0.302 MH/s/W |
 | RTX 3080 Ti | ~68.03 MH/s | 1860 MHz | 810 MHz | 148.71 W | 0.262 MH/s/W |
 | RTX 4090 | ~150.01 MH/s |2520 MHz | 5001 MHz | 290.02 W | 0.517 MH/s/W |
 | RTX 5080 | ~97.59 MH/s | 2715 MHz | 14801 MHz | 249.86 W | 0.391 MH/s/W |
