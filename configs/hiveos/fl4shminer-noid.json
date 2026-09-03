@@ -6,7 +6,7 @@
       "coin": "NOID",
       "pool_ssl": true,
       "pool_urls": [
-        "https://pool.ariabrain.com/noid-rpc/"
+        "stratum+ssl://eu.innovlab.cc:19601"
       ],
       "dpool_ssl": false,
       "miner": "custom",
