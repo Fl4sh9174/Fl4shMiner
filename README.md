@@ -227,7 +227,7 @@ Supported algorithm aliases are `noid`, `no1d`, `parano1d`, and `poseidon2b`. Th
 ### Command-Line Example
 
 ```bash
--a noid -pool https://pool.ariabrain.com/noid-rpc/ -w "%WALLET%.%WORKER%" -pass x
+-a noid -pool stratum+ssl://eu.innovlab.cc:19601 -w "%WALLET%.%WORKER%" -pass x
 ```
 
 Use your NOID wallet address as the login and payout address. Optional worker names use the `wallet.worker` format.
@@ -249,11 +249,11 @@ Use your NOID wallet address as the login and payout address. Optional worker na
 
 Poseidon2b mining for NOID includes a **3% developer fee**, calculated from completed work.
 
-### AriaPool Integration
+###  Integration
 
-Fl4shMiner supports [AriaPool NOID](https://pool.ariabrain.com/noid.html) directly.
+Fl4shMiner supports [InnovLab Pool](https://innovlab.cc) directly.
 
-- Endpoint: `https://pool.ariabrain.com/noid-rpc/`
+- Endpoint: `stratum+ssl://eu.innovlab.cc:19601`
 - Your NOID wallet address is your login and payout address.
 - Optional worker names use `wallet.worker`.
 
