@@ -12,7 +12,6 @@ Fl4shMiner is a GPU miner for NVIDIA CUDA and AMD OpenCL devices. It supports Wi
 - [PearlHash (PRL)](#pearlhash-prl)
 - [Cryptix-OX8 (CPAY)](#cryptix-ox8-cpay)
 - [SHA256d (CSD)](#sha256d-csd)
-- [FusionHash (FXL)](#fusionhash-fxl)
 - [Parano1d / Poseidon2b (NOID)](#parano1d--poseidon2b-noid)
 
 ## Supported GPUs
@@ -32,7 +31,7 @@ Fl4shMiner is a GPU miner for NVIDIA CUDA and AMD OpenCL devices. It supports Wi
 >
 > **Parano1d / NOID support:** RTX 30 Series (SM86), RTX 40 Series (SM89), and RTX 50 Series (SM120).
 
-### AMD (FXL and CPAY)
+### AMD CPAY)
 
 - RX 400 Series
 - RX 500 Series
@@ -176,43 +175,6 @@ SHA256d mining for CSD includes a **1% developer fee**.
 [View or download the SHA256d (CSD) HiveOS configuration](configs/hiveos/fl4shminer-csd.json)
 
 Import `fl4shminer-csd.json` into HiveOS to create the preconfigured flight sheet.
-
-[Back to Supported Algorithms](#supported-algorithms)
-
----
-
-## FusionHash (FXL)
-
-### Command-Line Example
-
-```bash
--a fusionhash -pool wss://us-east.coin-miners.info:8443 -w %WAL%.%WORKER_NAME% -pass x
-```
-
-### Tested Performance
-
-| GPU | Hashrate | Core Clock Offset | Locked Core Clock | Memory Clock | Power Limit |
-|---|---:|---:|---:|---:|---:|
-| GTX 1080 Ti | ~2.3 kH/s | +150 MHz | 1800 MHz | Default 5000 MHz | 215 W |
-| RTX 3060 Ti | ~2.8 kH/s | +200 MHz | 1800 MHz | Locked at 5001 MHz | 160 W |
-| RTX 3070 | ~3.2 kH/s | +175 MHz | 1800 MHz | Locked at 5001 MHz | 175 W |
-| RTX 3080 | ~4.8 kH/s | +175 MHz | 1750 MHz | Locked at 5001 MHz | 270 W |
-| RTX 3080 Ti | ~5.6 kH/s | +175 MHz | 1750 MHz | Locked at 5001 MHz | 290 W |
-| RTX 4090 | ~10.0+ kH/s | +200 MHz | 2400 MHz | Locked at 5001 MHz | 360 W |
-
-Pool shares were accepted with zero rejected shares during testing.
-
-> Performance may vary depending on GPU model, silicon quality, driver version, operating system, cooling, and overclock settings.
-
-### Developer Fee
-
-FusionHash mining includes a **2% developer fee**.
-
-### HiveOS Configuration
-
-[View or download the FusionHash HiveOS configuration](configs/hiveos/fl4shminer-fxl.json)
-
-Import `fl4shminer-fxl.json` into HiveOS to create the preconfigured flight sheet.
 
 [Back to Supported Algorithms](#supported-algorithms)
 
