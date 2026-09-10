@@ -13,6 +13,7 @@ Fl4shMiner is a GPU miner for NVIDIA CUDA and AMD OpenCL devices. It supports Wi
 - [Cryptix-OX8 (CPAY)](#cryptix-ox8-cpay)
 - [SHA256d (CSD)](#sha256d-csd)
 - [Parano1d / Poseidon2b (NOID)](#parano1d--poseidon2b-noid)
+- [Quantus (QUAN)](#quantus-quan)
 
 ## Supported GPUs
 
@@ -30,6 +31,8 @@ Fl4shMiner is a GPU miner for NVIDIA CUDA and AMD OpenCL devices. It supports Wi
 > **PearlHash support:** RTX 30 Series (Ampere) and RTX 40 Series (Ada Lovelace). Additional NVIDIA architectures are planned for future releases.
 >
 > **Parano1d / NOID support:** RTX 30 Series (SM86), RTX 40 Series (SM89), and RTX 50 Series (SM120).
+>
+> **Quantus / QUAN support:** RTX 30 Series (SM86), RTX 40 Series (SM89), and RTX 50 Series (SM120).
 
 ### AMD CPAY)
 
@@ -46,6 +49,7 @@ Fl4shMiner is a GPU miner for NVIDIA CUDA and AMD OpenCL devices. It supports Wi
 - Native CUDA builds optimized for Pascal, Turing, Ampere, Ada Lovelace, and Blackwell GPUs.
 - PearlHash CUDA kernels optimized for Ampere and Ada Lovelace GPUs.
 - Poseidon2b (NOID) CUDA kernels optimized for SM86, SM89, and SM120 GPUs.
+- Quantus (QUAN) CUDA kernels optimized for SM86, SM89, and SM120 GPUs.
 - Automatic per-GPU launch tuning for improved out-of-the-box performance.
 - Optimized CUDA kernels.
 - Faster parallel initialization for multi-GPU rigs.
@@ -200,7 +204,7 @@ Use your NOID wallet address as the login and payout address. Optional worker na
 |---|---:|---:|---:|---:|---:|
 | RTX 3060 Laptop | ~22.65 MH/s | 1650 MHz | 810 MHz | 75 W | 0.302 MH/s/W |
 | RTX 3080 Ti | ~68.03 MH/s | 1860 MHz | 810 MHz | 148.71 W | 0.262 MH/s/W |
-| RTX 4090 | ~150.01 MH/s |2520 MHz | 5001 MHz | 290.02 W | 0.517 MH/s/W |
+| RTX 4090 | ~150.01 MH/s | 2520 MHz | 5001 MHz | 290.02 W | 0.517 MH/s/W |
 | RTX 5080 | ~97.59 MH/s | 2715 MHz | 14801 MHz | 249.86 W | 0.391 MH/s/W |
 
 > NOID figures above are fixed-work engineering measurements. Live pool results may be lower during normal node proof-preparation gaps.
@@ -211,12 +215,59 @@ Use your NOID wallet address as the login and payout address. Optional worker na
 
 Poseidon2b mining for NOID includes a **3% developer fee**, calculated from completed work.
 
-###  Integration
+### Integration
 
 Fl4shMiner supports [InnovLab Pool](https://innovlab.cc) directly.
 
 - Endpoint: `stratum+ssl://eu.innovlab.cc:19601`
 - Your NOID wallet address is your login and payout address.
 - Optional worker names use `wallet.worker`.
+
+[Back to Supported Algorithms](#supported-algorithms)
+
+---
+
+## Quantus (QUAN)
+
+Fl4shMiner supports [Quantus](https://www.quantus.com) mining on NVIDIA RTX 30 Series, RTX 40 Series, and RTX 50 Series GPUs. Native CUDA kernels are provided for SM86, SM89, and SM120, with automatic architecture dispatch and workload tuning.
+
+Supported algorithm aliases are `quantus` and `quan`.
+
+### Command-Line Examples
+
+**QuanPool**
+
+```bash
+-a quan -pool mainnet.quanpool.com:9834 -w %WALLET%.%WORKER% -pass x
+```
+
+**InnovLab**
+
+```bash
+-a quan -pool us.innovlab.cc:17601 -w YOUR_WALLET.WORKER -pass x --tls-cert-sha256 f19cefa02f0653300ddf7f71ecb035d8609eeacf1156e3ccefe388bc659baf97
+```
+
+Use your QUAN wallet address as the login and payout address. Optional worker names use the `wallet.worker` format.
+
+### Tested Performance
+
+| GPU | Hashrate |
+|---|---:|
+| RTX 3080 Ti | 458+ MH/s |
+| RTX 4090 | 1.14+ GH/s |
+
+> Performance may vary depending on GPU model, silicon quality, driver version, operating system, cooling, and overclock settings.
+
+### Developer Fee
+
+Quantus mining includes a **1.5% developer fee**.
+
+### Pool Integration
+
+Fl4shMiner supports both [QuanPool](https://quanpool.com) and [InnovLab](https://quan.innovlab.cc).
+
+- QuanPool endpoint: `mainnet.quanpool.com:9834`
+- InnovLab endpoint: `us.innovlab.cc:17601`
+- InnovLab uses the TLS certificate SHA-256 fingerprint shown in the command-line example above.
 
 [Back to Supported Algorithms](#supported-algorithms)
