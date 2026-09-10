@@ -18,7 +18,7 @@
         "miner": "fl4shminer",
         "template": "%WAL%.%WORKER_NAME%",
         "install_url": "https://github.com/Fl4sh9174/Fl4shMiner/releases/download/v1.3.9/fl4shminer-v1.3.9.tar.gz",
-        "user_config": ""
+        "user_config": "-a quan"
       },
       "pool_geo": []
     }
