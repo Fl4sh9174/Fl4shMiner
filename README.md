@@ -270,4 +270,11 @@ Fl4shMiner supports both [QuanPool](https://quanpool.com) and [InnovLab](https:/
 - InnovLab endpoint: `us.innovlab.cc:17601`
 - InnovLab uses the TLS certificate SHA-256 fingerprint shown in the command-line example above.
 
+### HiveOS Configuration
+
+[View or download the Quantus (QUAN) HiveOS configuration](configs/hiveos/fl4shminer-quan.json)
+
+Import `fl4shminer-quan.json` into HiveOS to create the preconfigured flight sheet.
+
 [Back to Supported Algorithms](#supported-algorithms)
+
