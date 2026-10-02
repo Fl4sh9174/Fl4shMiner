@@ -253,8 +253,8 @@ Use your QUAN wallet address as the login and payout address. Optional worker na
 
 | GPU | Hashrate |
 |---|---:|
-| RTX 3080 Ti | 458+ MH/s |
-| RTX 4090 | 1.14+ GH/s |
+| RTX 3080 Ti | 574+ MH/s |
+| RTX 4090 | 1.25+ GH/s |
 
 > Performance may vary depending on GPU model, silicon quality, driver version, operating system, cooling, and overclock settings.
 
