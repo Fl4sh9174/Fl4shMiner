@@ -202,10 +202,9 @@ Use your NOID wallet address as the login and payout address. Optional worker na
 
 | GPU | Hashrate | Core Clock | Memory Clock | Power | Efficiency |
 |---|---:|---:|---:|---:|---:|
-| RTX 3060 Laptop | ~22.65 MH/s | 1650 MHz | 810 MHz | 75 W | 0.302 MH/s/W |
-| RTX 3080 Ti | ~68.03 MH/s | 1860 MHz | 810 MHz | 148.71 W | 0.262 MH/s/W |
-| RTX 4090 | ~150.01 MH/s | 2520 MHz | 5001 MHz | 290.02 W | 0.517 MH/s/W |
-| RTX 5080 | ~97.59 MH/s | 2715 MHz | 14801 MHz | 249.86 W | 0.391 MH/s/W |
+| RTX 3080 Ti | ~88.03 MH/s | 1860 MHz | 810 MHz | 297.60 W | 0.296 MH/s/W |
+| RTX 4090 | ~203.90 MH/s | 2580 MHz | 5001 MHz | 376.60 W | 0.541 MH/s/W |
+| RTX 5070Ti | ~115.27 MH/s | 2705 MHz | 810 MHz | 217.90 W | 0.529 MH/s/W |
 
 > NOID figures above are fixed-work engineering measurements. Live pool results may be lower during normal node proof-preparation gaps.
 >
@@ -253,8 +252,8 @@ Use your QUAN wallet address as the login and payout address. Optional worker na
 
 | GPU | Hashrate |
 |---|---:|
-| RTX 3080 Ti | 574+ MH/s |
-| RTX 4090 | 1.25+ GH/s |
+| RTX 3080 Ti | 530+ MH/s |
+| RTX 4090 | 1.40+ GH/s |
 
 > Performance may vary depending on GPU model, silicon quality, driver version, operating system, cooling, and overclock settings.
 
