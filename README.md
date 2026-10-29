@@ -240,11 +240,6 @@ Supported algorithm aliases are `quantus` and `quan`.
 -a quan -pool mainnet.quanpool.com:9834 -w %WALLET%.%WORKER% -pass x
 ```
 
-**InnovLab**
-
-```bash
--a quan -pool us.innovlab.cc:17601 -w YOUR_WALLET.WORKER -pass x --tls-cert-sha256 f19cefa02f0653300ddf7f71ecb035d8609eeacf1156e3ccefe388bc659baf97
-```
 
 Use your QUAN wallet address as the login and payout address. Optional worker names use the `wallet.worker` format.
 
@@ -252,7 +247,7 @@ Use your QUAN wallet address as the login and payout address. Optional worker na
 
 | GPU | Hashrate |
 |---|---:|
-| RTX 3080 Ti | 530+ MH/s |
+| RTX 3080 Ti | 640+ MH/s |
 | RTX 4090 | 1.40+ GH/s |
 
 > Performance may vary depending on GPU model, silicon quality, driver version, operating system, cooling, and overclock settings.
@@ -263,11 +258,9 @@ Quantus mining includes a **1.5% developer fee**.
 
 ### Pool Integration
 
-Fl4shMiner supports both [QuanPool](https://quanpool.com) and [InnovLab](https://quan.innovlab.cc).
-
 - QuanPool endpoint: `mainnet.quanpool.com:9834`
 - InnovLab endpoint: `us.innovlab.cc:17601`
-- InnovLab uses the TLS certificate SHA-256 fingerprint shown in the command-line example above.
+- Kryptex endpoint: `qtc.kryptex.network:7049`
 
 ### HiveOS Configuration
 
