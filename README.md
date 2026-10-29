@@ -28,7 +28,7 @@ Fl4shMiner is a GPU miner for NVIDIA CUDA and AMD OpenCL devices. It supports Wi
 - NVIDIA CMP Mining GPUs
 - NVIDIA Workstation GPUs
 
-> **PearlHash support:** RTX 30 Series (Ampere) and RTX 40 Series (Ada Lovelace). Additional NVIDIA architectures are planned for future releases.
+> **PearlHash support:** RTX 20 Series (Turing), RTX 30 Series (Ampere), TX 40 Series (Ada Lovelace) and RTX 50 Series (Blackwell). Additional NVIDIA architectures are planned for future releases.
 >
 > **Parano1d / NOID support:** RTX 30 Series (SM86), RTX 40 Series (SM89), and RTX 50 Series (SM120).
 >
@@ -79,11 +79,11 @@ Hashrates below used Fl4shMiner v1.2.1.
 
 | GPU | Hashrate | Core Clock Offset | Locked Core Clock | Memory Clock | Power Limit |
 |---|---:|---:|---:|---:|---:|
-| RTX 3060 Ti | ~68.00 TH/s | +225 MHz | 1825 MHz | Locked at 5001 MHz | 168 W |
-| RTX 3070 | ~75.00 TH/s | +250 MHz | 1650 MHz | Locked at 5001 MHz | 175 W |
-| RTX 3080 | ~108.54 TH/s | +250 MHz | 1605 MHz | Locked at 5001 MHz | 262 W |
-| RTX 3080 Ti | ~128.00 TH/s | +250 MHz | 1605 MHz | Locked at 5001 MHz | 295 W |
-| RTX 4090 | ~316.00 TH/s | +300 MHz | 2505 MHz | Locked at 5001 MHz | 398 W |
+| RTX 3060 Ti | ~74.70 TH/s | +225 MHz | 1850 MHz | Locked at 810 MHz | 152 W |
+| RTX 3070 | ~87.00 TH/s | +250 MHz | 1850 MHz | Locked at 810 MHz | 166 W |
+| RTX 3080 | ~125.00 TH/s | +250 MHz | 1800 MHz | Locked at 810 MHz | 230 W |
+| RTX 3080 Ti | ~141.71 TH/s | +250 MHz | 1740 MHz | Locked at 810 MHz | 247 W |
+| RTX 4090 | ~345.00 TH/s | +300 MHz | 2655 MHz | Locked at 810 MHz | 357 W |
 
 Pool shares were accepted with zero rejected shares during testing.
 
