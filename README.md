@@ -14,6 +14,7 @@ Fl4shMiner is a GPU miner for NVIDIA CUDA and AMD OpenCL devices. It supports Wi
 - [SHA256d (CSD)](#sha256d-csd)
 - [Parano1d / Poseidon2b (NOID)](#parano1d--poseidon2b-noid)
 - [Quantus (QUAN)](#quantus-quan)
+- [Proxima (PROX)](#proxima-prox)
 
 ## Supported GPUs
 
@@ -33,6 +34,8 @@ Fl4shMiner is a GPU miner for NVIDIA CUDA and AMD OpenCL devices. It supports Wi
 > **Parano1d / NOID support:** RTX 30 Series (SM86), RTX 40 Series (SM89), and RTX 50 Series (SM120).
 >
 > **Quantus / QUAN support:** RTX 30 Series (SM86), RTX 40 Series (SM89), and RTX 50 Series (SM120).
+>
+> **Proxima / PROX support:** NVIDIA GTX 10 Series through RTX 50 Series.
 
 ### AMD CPAY)
 
@@ -50,6 +53,7 @@ Fl4shMiner is a GPU miner for NVIDIA CUDA and AMD OpenCL devices. It supports Wi
 - PearlHash CUDA kernels optimized for Ampere and Ada Lovelace GPUs.
 - Poseidon2b (NOID) CUDA kernels optimized for SM86, SM89, and SM120 GPUs.
 - Quantus (QUAN) CUDA kernels optimized for SM86, SM89, and SM120 GPUs.
+- Dedicated Proxima (PROX) CUDA kernels for NVIDIA GTX 10 through RTX 50 Series GPUs.
 - Automatic per-GPU launch tuning for improved out-of-the-box performance.
 - Optimized CUDA kernels.
 - Faster parallel initialization for multi-GPU rigs.
@@ -270,3 +274,60 @@ Import `fl4shminer-quan.json` into HiveOS to create the preconfigured flight she
 
 [Back to Supported Algorithms](#supported-algorithms)
 
+---
+
+## Proxima (PROX)
+
+Fl4shMiner supports Proxima (PROX) mining with dedicated CUDA kernels on NVIDIA GPUs from the GTX 10 Series through the RTX 50 Series.
+
+### Command-Line Examples
+
+**Windows**
+
+```bash
+fl4shminer.exe -a prox --pool stratum+tcp://POOL_HOST:PORT -w YOUR_PROX_ADDRESS.worker1
+```
+
+**Linux**
+
+```bash
+./fl4shminer -a prox --pool stratum+tcp://POOL_HOST:PORT -w YOUR_PROX_ADDRESS.worker1
+```
+
+Replace `POOL_HOST:PORT` with your pool's endpoint and `YOUR_PROX_ADDRESS` with your Proxima wallet address. On Windows, you can also run `Start-Mining.bat`, select **PROX**, choose a pool, and enter your address.
+
+### Tested Performance
+
+Benchmarks below were measured on **InnovLab** and **K1Pool** with locked core clocks.
+
+| GPU | Hashrate |
+|---|---:|
+| RTX 5070 Ti | ~10.1 GH/s |
+| RTX 4090 | ~17.0 GH/s |
+| RTX 3080 Ti | ~7.35 GH/s |
+| RTX 2060 SUPER | ~2.59 GH/s |
+| GTX 1080 Ti | ~3.30 GH/s |
+
+> Performance can be lower on other pools (for example, approximately 6.8 GH/s on the RTX 3080 Ti). Results also vary with GPU model, clocks, driver, operating system, and cooling.
+
+### Developer Fee
+
+Proxima mining includes a **1% developer fee**.
+
+### Pool Integration and Tuning
+
+Fl4shMiner supports **InnovLab, K1Pool, Cryo Pool, HimPool, proximamine, and Suprnova**.
+
+- `--eco` locks GPU memory clocks to **405 MHz** to reduce power consumption.
+- Use `stratum+ssl://` instead of `stratum+tcp://` for pools that require TLS.
+- Suprnova uses your pool token as `--pass`; K1Pool supports a Kr account or a PROX wallet address as the login.
+- Automatic pool selection chooses the fastest available server. During mining, Fl4shMiner can switch between servers of the same pool on InnovLab, HimPool, and K1Pool.
+- Add `--pool-auto-region=false` to disable automatic region switching.
+
+### HiveOS Configuration
+
+[View or download the Proxima (PROX) HiveOS configuration](configs/hiveos/fl4shminer-prox.json)
+
+Import `fl4shminer-prox.json` into HiveOS to create the preconfigured flight sheet.
+
+[Back to Supported Algorithms](#supported-algorithms)
