@@ -72,7 +72,7 @@ Fl4shMiner supports PearlHash mining for Pearl (PRL) on NVIDIA RTX 20 Series, RT
 ### Command-Line Example
 
 ```bash
--a pearlhash -pool stratum+tcp://br.pearl.herominers.com:1200 -w %WAL%.%WORKER_NAME% -pass x
+-a pearlhash -pool stratum+tcp://pool.peryn.ai:3333 -w %WAL%.%WORKER_NAME% -pass x
 ```
 
 Replace `%WAL%` with your PRL wallet address and `%WORKER_NAME%` with the desired name for your mining rig.
