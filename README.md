@@ -79,15 +79,15 @@ Replace `%WAL%` with your PRL wallet address and `%WORKER_NAME%` with the desire
 
 ### Tested Performance
 
-Hashrates below used Fl4shMiner v1.2.1.
+Hashrates below used Fl4shMiner v1.6.3.
 
 | GPU | Hashrate | Core Clock Offset | Locked Core Clock | Memory Clock | Power Limit |
 |---|---:|---:|---:|---:|---:|
-| RTX 3060 Ti | ~74.70 TH/s | +225 MHz | 1850 MHz | Locked at 810 MHz | 152 W |
-| RTX 3070 | ~87.00 TH/s | +250 MHz | 1850 MHz | Locked at 810 MHz | 166 W |
-| RTX 3080 | ~125.00 TH/s | +250 MHz | 1800 MHz | Locked at 810 MHz | 230 W |
-| RTX 3080 Ti | ~141.71 TH/s | +250 MHz | 1740 MHz | Locked at 810 MHz | 247 W |
-| RTX 4090 | ~345.00 TH/s | +300 MHz | 2655 MHz | Locked at 810 MHz | 357 W |
+| RTX 3060 Ti | ~74.70 TH/s | +225 MHz | 1850 MHz | Locked at 810 MHz | 125 W |
+| RTX 3070 | ~87.00 TH/s | +250 MHz | 1850 MHz | Locked at 810 MHz | 150 W |
+| RTX 3080 | ~125.00 TH/s | +250 MHz | 1800 MHz | Locked at 810 MHz | 210 W |
+| RTX 3080 Ti | ~141.71 TH/s | +250 MHz | 1740 MHz | Locked at 810 MHz | 224 W |
+| RTX 4090 | ~345.00 TH/s | +300 MHz | 2655 MHz | Locked at 810 MHz | 344 W |
 
 Pool shares were accepted with zero rejected shares during testing.
 
