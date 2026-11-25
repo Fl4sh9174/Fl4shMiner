@@ -6,18 +6,18 @@
       "coin": "PRL",
       "pool_ssl": false,
       "pool_urls": [
-        "prl-us.kryptex.network:7048"
+        "us.pool.peryn.ai:3333"
       ],
       "dpool_ssl": false,
       "miner": "custom",
       "miner_alt": "fl4shminer",
       "miner_config": {
-        "url": "prl-us.kryptex.network:7048",
+        "url": "us.pool.peryn.ai:3333",
         "algo": "pearlhash",
         "pass": "x",
         "miner": "fl4shminer",
         "template": "%WAL%.%WORKER_NAME%",
-        "install_url": "https://github.com/Fl4sh9174/Fl4shMiner/releases/download/v1.6.3/fl4shminer-v1.6.3.tar.gz",
+        "install_url": "https://github.com/Fl4sh9174/Fl4shMiner/releases/download/v1.6.4/fl4shminer-v1.6.4.tar.gz",
         "user_config": ""
       },
       "pool_geo": []
